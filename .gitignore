@@ -6,8 +6,8 @@
 .idea/**/shelf
 .idea/
 
-.task_13/
-.laborator.iml
+task_13/
+laborator.iml
 
 # Generated files
 .idea/**/contentModel.xml
