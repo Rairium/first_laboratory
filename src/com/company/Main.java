@@ -49,7 +49,7 @@ public class Main {
                     FactorialComputing.showFactorial(-52);
                     break;
                 case 5:
-                    AllNonemptySubstrings.printAllSubstrings("Hello    Worfld ! ");
+                    AllNonemptySubstrings.printAllSubstrings("Hello World");
                     break;
                 case 6:
                     RandomString.showRandomString();

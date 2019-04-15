@@ -1,19 +1,20 @@
 package com.company.task_5;
 
+import java.util.Arrays;
+
 public class AllNonemptySubstrings {
     public static void printAllSubstrings(String text) {
-        StringBuilder modifiedText = new StringBuilder(text);
-        for (int i = 0; i < text.length(); i++) {
-            if (text.charAt(i) == ' ') {
-                modifiedText.deleteCharAt(i);
-                text = modifiedText.toString();
-                i--;
+        char[] modifiedText = text.toCharArray();
+        int n = modifiedText.length;
+        for (int len = 1; len <= n; len++)
+            for (int i = 0; i <= n - len; i++) {
+                int j = i + len - 1;
+                for (int k = i; k <= j; k++) {
+                    if (!Arrays.toString(modifiedText).isEmpty() && !(Arrays.toString(modifiedText).equals(" ")))
+                        System.out.print(modifiedText[k]);
+                }
+                System.out.println();
             }
-        }
-        String newText = modifiedText.toString();
-        if (newText.isEmpty()) {
-            System.out.println("The new text is empty");
-        } else
-            System.out.println("The modified text is " + newText);
     }
 }
+
