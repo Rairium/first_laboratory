@@ -10,11 +10,11 @@ public final class Point {
     }
 
     public double getX() {
-        return x;
+        return this.x;
     }
 
     public double getY() {
-        return y;
+        return this.y;
     }
 
     public Point translate(double xTranslate, double yTranslate) {
