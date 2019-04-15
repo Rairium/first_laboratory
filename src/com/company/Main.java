@@ -3,7 +3,6 @@ package com.company;
 import com.company.task_1.IntegerConvert;
 import com.company.task_10.PointMutators;
 import com.company.task_11_12.Employee;
-import com.company.task_11_12.LargestAndAverage;
 import com.company.task_11_12.SetEmployer;
 import com.company.task_13.FileSorting;
 import com.company.task_14_15.LabeledPoint;
@@ -63,8 +62,7 @@ public class Main {
                     SwapContent.swap(num1, num2);
                     break;
                 case 9:
-                    Point p = new Point(3, 4).translate(1, 4).scale(0.5);
-                    System.out.println(p.getX() + " " + p.getY());
+                    Point p = new Point(3, 4).translate(1, 4).scale(0.5).translate(6, 7).scale(2);
                     System.out.println(p.getX() + " " + p.getY());
                     break;
                 case 10:
@@ -76,10 +74,10 @@ public class Main {
                     System.out.println(pointMutators.getX() + " " + pointMutators.getY());
                     break;
                 case 11:
-                    System.out.println("The average salary in the company = " + LargestAndAverage.average(SetEmployer.setEmployer()) + " $");
+                    System.out.println("The average salary in the company = " + Employee.average(SetEmployer.setEmployer()) + " $");
                     break;
                 case 12:
-                    System.out.println("The largest salary has " + ((Employee) LargestAndAverage.largest(SetEmployer.setEmployer())).getName());
+                    System.out.println("The largest salary has " + ((Employee) Employee.largest(SetEmployer.setEmployer())).getName());
                     break;
                 case 13:
                     FileSorting.sorting(new File("D:\\IntelliJ\\laborator\\task_13"));
