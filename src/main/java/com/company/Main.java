@@ -40,8 +40,8 @@ public class Main {
                     System.out.println(IntegerConvert.convertToHexa(10));
                     break;
                 case 2:
-                    AngleNormalizer.normalize(360);
-                    AngleNormalizer.mathNormalize(360);
+                    System.out.println(AngleNormalizer.normalize(-700));
+                    System.out.println(AngleNormalizer.mathNormalize(700));
                     break;
                 case 3:
                     ThreeIntegersComparison.compare(4, 5, 6);
