@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.*;
 
 public class FileSorting {
-    public static void sorting(File file) {
+    public static File[] sorting(File file) {
         List<File> list = new ArrayList<>();
         for (File f : Objects.requireNonNull(file.listFiles()))
             if (f.listFiles() != null) {
@@ -24,6 +24,7 @@ public class FileSorting {
         for (File f : fileArray)
             System.out.println(f);
 
+        return fileArray;
     }
 }
 
