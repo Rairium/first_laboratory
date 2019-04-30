@@ -35,7 +35,9 @@ public class Main {
                 case 0:
                     break;
                 case 1:
-                    IntegerConvert.convert(4452);
+                    System.out.println(IntegerConvert.convertToBinary(10));
+                    System.out.println(IntegerConvert.convertToOctal(10));
+                    System.out.println(IntegerConvert.convertToHexa(10));
                     break;
                 case 2:
                     AngleNormalizer.normalize(360);
