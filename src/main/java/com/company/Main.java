@@ -48,7 +48,7 @@ public class Main {
                     System.out.println(ThreeIntegersComparison.mathCompare(4, 5, 6));
                     break;
                 case 4:
-                    FactorialComputing.showFactorial(-52);
+                    System.out.println(FactorialComputing.showFactorial(8));
                     break;
                 case 5:
                     AllNonemptySubstrings.printAllSubstrings("Hello World");
