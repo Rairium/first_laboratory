@@ -44,8 +44,8 @@ public class Main {
                     System.out.println(AngleNormalizer.mathNormalize(700));
                     break;
                 case 3:
-                    ThreeIntegersComparison.compare(4, 5, 6);
-                    ThreeIntegersComparison.mathCompare(4, 5, 6);
+                    System.out.println(ThreeIntegersComparison.compare(4, 5, 6));
+                    System.out.println(ThreeIntegersComparison.mathCompare(4, 5, 6));
                     break;
                 case 4:
                     FactorialComputing.showFactorial(-52);
