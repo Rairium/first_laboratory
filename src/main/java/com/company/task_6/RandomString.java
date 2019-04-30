@@ -6,7 +6,7 @@ public class RandomString {
 
     private static final String base = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-    public static void showRandomString() {
+    public static String showRandomString() {
         String randomStringFormat = "";
         long number = new Random().nextLong();
         if (number < 0) {
@@ -19,6 +19,6 @@ public class RandomString {
             randomStringFormat = base.charAt((int)digit) + randomStringFormat;
             number /= 36;
         }
-        System.out.println("The new random string is " + randomStringFormat);
+        return randomStringFormat;
     }
 }
