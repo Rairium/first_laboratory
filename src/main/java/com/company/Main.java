@@ -1,7 +1,7 @@
 package com.company;
 
 import com.company.task_1.IntegerConvert;
-import com.company.task_10.PointMutators;
+import com.company.task_10.PointMutator;
 import com.company.task_11_12.Employee;
 import com.company.task_11_12.LargestAndAverage;
 import com.company.task_11_12.SetEmployer;
@@ -69,7 +69,7 @@ public class Main {
                     System.out.println(p.getX() + " " + p.getY());
                     break;
                 case 10:
-                    PointMutators pointMutators = new PointMutators();
+                    PointMutator pointMutators = new PointMutator();
                     System.out.println(pointMutators.getX() + " " + pointMutators.getY());
                     pointMutators.translate(5, 8);
                     System.out.println(pointMutators.getX() + " " + pointMutators.getY());

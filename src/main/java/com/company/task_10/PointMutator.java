@@ -1,19 +1,24 @@
 package com.company.task_10;
 
-public final class PointMutators {
-    private int x;
-    private int y;
+public final class PointMutator {
+    private double x;
+    private double y;
 
-    public PointMutators() {
+    public PointMutator(double x, double y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public PointMutator() {
         this.x = 0;
         this.y = 0;
     }
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 
