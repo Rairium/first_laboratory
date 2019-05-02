@@ -89,7 +89,7 @@ public class Main {
                     PointTask pointTask = new PointTask(4, 5);
                     System.out.println("Point coordinates are : " + pointTask.getX() + " " + pointTask.getY());
                     LabeledPoint labeledPoint = new LabeledPoint("Name", 4, 5);
-                    System.out.println("LabelPoint name is : " + labeledPoint.getLabel() + " \nLabelPoint coordinates are : " + pointTask.getX() + " " + pointTask.getY());
+                    System.out.println("LabelPoint name is : " + labeledPoint.getLabel() + " \nLabelPoint coordinates are : " + labeledPoint.getX() + " " + labeledPoint.getY());
                     break;
                 case 15:
                     PointTask pointTask1 = new PointTask(4, 5);
