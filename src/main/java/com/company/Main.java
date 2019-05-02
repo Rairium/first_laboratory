@@ -54,7 +54,7 @@ public class Main {
                     AllNonemptySubstrings.printAllSubstrings("Hello World");
                     break;
                 case 6:
-                    System.out.println(RandomString.showRandomString());
+                    System.out.println(RandomString.showRandomString(776432562436L));
                     break;
                 case 7:
                     NotASCII.printNotASCII(" grewg rewg erewgg șâțșțșp  汉字 Tra      dition al Chinese 漢字漢字漢字漢字 \u00A9");

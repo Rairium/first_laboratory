@@ -11,4 +11,10 @@ public class RandomStringTest {
         String expected = RandomString.showRandomString();
         assertNotNull(expected);
     }
+
+    @Test
+    public void showRandomString() {
+        String expected = RandomString.showRandomString(776432562436L);
+        assertEquals(expected, "9WORWFES");
+    }
 }
