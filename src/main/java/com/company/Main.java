@@ -4,6 +4,7 @@ import com.company.task_1.IntegerConvert;
 import com.company.task_10.PointMutator;
 import com.company.task_11_12.Employee;
 import com.company.task_11_12.LargestAndAverage;
+import com.company.task_11_12.NegativeSalaryException;
 import com.company.task_11_12.SetEmployer;
 import com.company.task_13.FileSorting;
 import com.company.task_14_15.LabeledPoint;
@@ -22,7 +23,7 @@ import java.io.File;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NegativeSalaryException {
         Scanner sc = new Scanner(System.in);
         int task;
         System.out.println("Choose task ");

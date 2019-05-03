@@ -7,9 +7,19 @@ import static org.junit.Assert.*;
 public class LargestAndAverageTest {
 
     @Test
-    public void average() {
+    public void average() throws NegativeSalaryException {
         double expected = LargestAndAverage.average(SetEmployer.setEmployer());
         assertEquals(expected, 6000, 0);
+    }
+
+    @Test
+    public void averageIfSalaryNegative() {
+        try {
+            double expected = LargestAndAverage.average(SetNegativeEmployeer.setNegativeEmployer());
+            assertEquals(expected, 0, 0);
+        } catch (NegativeSalaryException e) {
+            assertEquals(e.getMessage(), "found negative salary");
+        }
     }
 
     @Test
@@ -23,7 +33,7 @@ public class LargestAndAverageTest {
     }
 
     @Test
-    public void largest() {
+    public void largest() throws NegativeSalaryException {
         String expected = ((Employee) LargestAndAverage.largest(SetEmployer.setEmployer())).getName();
         assertEquals(expected, "Michael");
     }
@@ -35,6 +45,16 @@ public class LargestAndAverageTest {
             assertEquals(expected, "Michael");
         } catch (Exception e) {
             assertEquals(e.toString(), "java.lang.NullPointerException");
+        }
+    }
+
+    @Test
+    public void largestIfSalaryNegative() {
+        try {
+            String expected = ((Employee) LargestAndAverage.largest(SetNegativeEmployeer.setNegativeEmployer())).getName();
+            assertEquals(expected, 3000, 0);
+        } catch (NegativeSalaryException e) {
+            assertEquals(e.getMessage(), "found negative salary");
         }
     }
 }
